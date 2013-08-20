@@ -1,4 +1,4 @@
-nductive Id {A:Type} : A->A->Type := id_refl : forall (t:A),Id t t.
+Inductive Id {A:Type} : A->A->Type := id_refl : forall (t:A),Id t t.
 
 Notation "x == y" := (Id x y) (at level 70).
 
